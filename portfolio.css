@@ -55,7 +55,7 @@ h2 a:hover{
     margin: 0 auto;
     background-color: rgb(193,225,193);
     box-shadow: 0 0 1em #22222222;
-    opacity: 0.9;
+    opacity: 1;
 }
 .img_fl{
     width:100%;
