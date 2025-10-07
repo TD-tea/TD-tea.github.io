@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TANKS</title>
+        <meta charset="utf-8"/>
+        <meta mane="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" href="normalize.css"/>
+
+        <script src="jquery-3.7.1.min.js"></script>
+        <script src="jquery.flexslider-min.js"></script>
+
+        <Script src="lightbox.min.js"></script>
+        <link rel="stylesheet" href="lightbox.min.css"/>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
+
+        <link rel="stylesheet" href="flexslider.css"/>
+        <link rel="stylesheet" href="hurah.css"/>
+
+        <script>
+            $(document).ready(function(){
+                $('[data-fancybox="gallery"]').fancybox({
+                    transitionEffect: "rotate",
+                    transitionDuration: 1000,
+                });
+
+                $('.flexslider').flexslider({
+                    animation: "slide"
+                }); 
+            });
+        </script>
+
+    </head>
+    <body><a name="top"></a>
+        <div id="header">
+            <div class="flex-container">
+                <div class="hcol1">
+                    <h1><a>RIGHT TO REPAIR</a></h1>
+                </div>
+                <div class="hcol1">
+                    <ul id="nav">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="law.html">Laws</a></li>
+                        <li>
+                            <a href="examples.html">Examples</a>
+                            <ul>
+                                <li><a href="#good">Good</a></li>
+                                <li><a href="#bad">Bad</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="phone.html">Phone</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="content">
+                <h2><a name="repair">Thank you!</a></h2>
+                <p>
+                    I might get back to you, I might not.
+                    I might even get back to you in a few months, or a few years.
+                    Or I might not get back to you at all.
+                    But I will try to get back to you.
+                </p>
+                
+            </div>
+        </div>
+        </div>
+        <div id="footer">
+            ooga booga , unga bunga
+        </div>
+        <img id="bongoCat" src="images/bongocat.gif" alt="Bongo Cat">
+        <script src="bongo.js"></script>
+    </body>
+</html>

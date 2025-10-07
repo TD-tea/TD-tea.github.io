@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <meta charset="utf-8"/>
+        <meta mane="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" href="normalize.css"/>
+
+        <script src="jquery-3.7.1.min.js"></script>
+        <script src="jquery.flexslider-min.js"></script>
+
+        <Script src="lightbox.min.js"></script>
+        <link rel="stylesheet" href="lightbox.min.css"/>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
+
+        <link rel="stylesheet" href="flexslider.css"/>
+        <link rel="stylesheet" href="hurah.css"/>
+
+        <script>
+            $(document).ready(function(){
+                $('[data-fancybox="gallery"]').fancybox({
+                    transitionEffect: "rotate",
+                    transitionDuration: 1000,
+                });
+
+                $('.flexslider').flexslider({
+                    animation: "slide"
+                }); 
+            });
+        </script>
+
+    </head>
+    <body><a name="top"></a>
+        <div id="header">
+            <h1>RIGHT TO REPAIR</h1>
+            <ul id="nav">
+                <li><a href="index.html" class="current">About</a></li>
+                <li><a href="law.html">Laws</a></li>
+                <li>
+                    <a href="examples.html">Examples</a>
+                    <ul>
+                        <li><a href="examples.html#good">Good</a></li>
+                        <li><a href="examples.html#bad">Bad</a></li>
+                    </ul>
+                </li>
+                <li><a href="phone.html">Phone</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div id="wrapper">
+            <!-- <div class="container">
+                <img src="images/plushie.jpg" class="image"
+                class="hover_text"/>
+                <div class="overlay">
+                    <p>Plushie</p>
+                </div>
+            </div> -->
+            <div id="content">
+                <h2><a name="about" href="#top">About</a></h2>
+                <p>
+                    <a href="images/ror.png" data-fancybox="gallery" data-caption="FIGHT"><img src="images/ror.png" class="img_fr"/></a>
+                    Right to repair is a movement that advocates for the ability of consumers to repair their own devices and equipment. 
+                    This includes the right to access repair manuals, tools, and parts necessary for repairs. The movement has gained traction 
+                    in recent years as more people become aware of the environmental impact of electronic waste and the high cost of repairs from manufacturers.                
+                </p>
+                <div style="clear:both"></div>
+            </div>
+            <!-- <a href="images/ror.png" data-fancybox="gallery" data-caption="FIGHT"><img src="images/ror.png" class="img_c"/></a> -->
+            <!-- <div class="flex-container">
+                <div class="gcol1">
+                    <a href="images/plushie.jpg" data-lightbox="gallery" data-title="plushie"><img src="images/plushie.jpg" class="image"></a>
+                    <a href="images/plushie.jpg" data-lightbox="gallery" data-title="plushie"><img src="images/plushie.jpg" class="image"></a>
+                    <a href="images/plushie.jpg" data-lightbox="gallery" data-title="plushie"><img src="images/plushie.jpg" class="image"></a>
+                </div>
+                <div class="gcol2">
+                    <a href="images/plushie.jpg" data-fancybox="gallery" data-caption="plushie"><img src="images/plushie.jpg" class="image"></a>
+                    <a href="images/plushie.jpg" data-fancybox="gallery" data-caption="plushie"><img src="images/plushie.jpg" class="image"></a>
+                    <a href="images/plushie.jpg" data-fancybox="gallery" data-caption="plushie"><img src="images/plushie.jpg" class="image"></a>
+                </div>
+                <div class="gcol3">
+                    <div class="flexslider">
+                        <ul class="slides">
+                          <li>
+                            <img src="images/plushie.jpg" class="image">
+                          </li>
+                          <li>
+                            <img src="images/plushie.jpg" class="image">
+                          </li>
+                          <li>
+                            <img src="images/plushie.jpg" class="image">
+                          </li>
+                        </ul>
+                      </div>
+                    <div class="container">
+                        <img src="images/plushie.jpg" class="image"
+                        class="hover_text"/>
+                        <div class="overlay">
+                            <p>Plushie</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div id="footer">
+            <!-- ooga booga , unga bunga -->
+            <div class="flex-container">
+                <div class="gcol1">
+                    Nav:
+                    <ul id="navf">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="law.html">Laws</a></li>
+                        <li><a href="examples.html">Examples</a></li>
+                        <li><a href="phone.html">Phone</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="gcol2">
+                    Sources:
+                    <ul id="navf">
+                        <li><a href="https://www.ifixit.com/">iFixit</a></li>
+                        <li><a href="https://www.repair.org/">Repair.org</a></li>
+                        <li><a href="https://frame.work/about">Framework</a></li>
+                        <li><a href="https://www.eff.org/">EFF</a></li>
+                        <li><a href="https://www.agweb.com/news/machinery/ftc-vs-john-deere-two-experts-answer-key-questions">John Deere Lawsuit</a></li>
+                    </ul>
+                </div>
+                <div class="gcol3">
+                    Images:
+                    <ul id="navf">
+                        <li><a href="https://www.cultureofrepair.org/advocacy">FIGHT</a></li>
+                        <li><a href="https://www.ifixit.com/News/60846/colorado-fixes-wheelchair-repair-with-new-bill">Wheelchair</a></li>
+                        <li><a href="https://en.m.wikipedia.org/wiki/File:Framework_Computer_logo.svg">Framework Logo</a></li>
+                        <li><a href="https://en.m.wikipedia.org/wiki/File:IFixit_logo.svg">iFixit Logo</a></li>
+                        <li><a href="https://www.vice.com/en/article/john-deere-hit-with-class-action-lawsuit-for-alleged-tractor-repair-monopoly/">Jon</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img id="bongoCat" src="images/bongocat.gif" alt="Bongo Cat">
+        <script src="bongo.js"></script>
+    </body>
+</html>

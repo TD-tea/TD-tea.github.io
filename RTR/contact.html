@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <meta charset="utf-8"/>
+        <meta mane="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" href="normalize.css"/>
+
+        <script src="jquery-3.7.1.min.js"></script>
+        <script src="jquery.flexslider-min.js"></script>
+
+        <Script src="lightbox.min.js"></script>
+        <link rel="stylesheet" href="lightbox.min.css"/>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
+
+        <link rel="stylesheet" href="flexslider.css"/>
+        <link rel="stylesheet" href="hurah.css"/>
+
+        <script>
+            $(document).ready(function(){
+                $('[data-fancybox="gallery"]').fancybox({
+                    transitionEffect: "rotate",
+                    transitionDuration: 1000,
+                });
+
+                $('.flexslider').flexslider({
+                    animation: "slide"
+                }); 
+            });
+        </script>
+
+    </head>
+    <body><a name="top"></a>
+        <div id="header">
+            <div class="flex-container">
+                <div class="hcol1">
+                    <h1><a>RIGHT TO REPAIR</a></h1>
+                </div>
+                <div class="hcol1">
+                    <ul id="nav">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="law.html">Laws</a></li>
+                        <li>
+                            <a href="examples.html">Examples</a>
+                            <ul>
+                                <li><a href="examples.html#good">Good</a></li>
+                                <li><a href="examples.html#bad">Bad</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="phone.html">Phone</a></li>
+                        <li><a href="contact.html" class="current">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="wrapper">
+            <!-- <div class="container">
+                <img src="images/plushie.jpg" class="image"
+                class="hover_text"/>
+                <div class="overlay">
+                    <p>Plushie</p>
+                </div>
+            </div> -->
+            <div id="content">
+                <h2><a name="Contact" href="#top">Contact</a></h2>
+                <p>
+                    If you have any questions, comments, or concerns, please feel free to fill out the form below.                   
+                </p>
+                <!-- <div class="form_box">
+                    <div class="form_col_1"> -->
+                        <form action="https://api.web3forms.com/submit" method="post">
+                            <input type="hidden" name="access_key" value="cceb7795-4bf8-4b49-bd46-6bc95c7bae2b">
+                            <input type="hidden" name="redirect" value="https://dang1980.dima358.com/final/thanks.html">
+
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name"/>
+
+                            <label for="email_add">Email:</label>
+                            <input type="email" id="email_add" name="email_add"/>
+
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone"/>
+
+                            <!-- <label for="email_list">Join our email spam</label>
+                            <input type="checkbox" id="email_list" name="email_list" value="yes"/>
+
+                            <label for="">Fav Creature:</label>
+                            <select id="creature" name="creature">
+                                <option value="cat">Cat</option>
+                                <option value="frog">Frog</option>
+                                <option value="dog">Dog</option>
+                                <option value="fish">Fish</option>
+                                <option value="bird">Bird</option>
+                                <option value="hamster">Hamster</option>
+                                <option value="turtle">Turtle</option>
+                            </select> -->
+
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" cols="40"></textarea>
+
+                            <input type="submit" value="Submit"/>
+                        </form>
+                    <!-- </div>
+                </div> -->
+            </div>
+        </div>
+        </div>
+        <div id="footer">
+            <!-- ooga booga , unga bunga -->
+            <div class="flex-container">
+                <div class="gcol1">
+                    Nav:
+                    <ul id="navf">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="law.html">Laws</a></li>
+                        <li><a href="examples.html">Examples</a></li>
+                        <li><a href="phone.html">Phone</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="gcol2">
+                    Sources:
+                    <ul id="navf">
+                        <li><a href="https://www.ifixit.com/">iFixit</a></li>
+                        <li><a href="https://www.repair.org/">Repair.org</a></li>
+                        <li><a href="https://frame.work/about">Framework</a></li>
+                        <li><a href="https://www.eff.org/">EFF</a></li>
+                        <li><a href="https://www.agweb.com/news/machinery/ftc-vs-john-deere-two-experts-answer-key-questions">John Deere Lawsuit</a></li>
+                    </ul>
+                </div>
+                <div class="gcol3">
+                    Images:
+                    <ul id="navf">
+                        <li><a href="https://www.cultureofrepair.org/advocacy">FIGHT</a></li>
+                        <li><a href="https://www.ifixit.com/News/60846/colorado-fixes-wheelchair-repair-with-new-bill">Wheelchair</a></li>
+                        <li><a href="https://en.m.wikipedia.org/wiki/File:Framework_Computer_logo.svg">Framework Logo</a></li>
+                        <li><a href="https://en.m.wikipedia.org/wiki/File:IFixit_logo.svg">iFixit Logo</a></li>
+                        <li><a href="https://www.vice.com/en/article/john-deere-hit-with-class-action-lawsuit-for-alleged-tractor-repair-monopoly/">Jon</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img id="bongoCat" src="images/bongocat.gif" alt="Bongo Cat">
+        <script src="bongo.js"></script>
+    </body>
+</html>

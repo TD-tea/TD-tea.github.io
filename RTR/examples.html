@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Examples</title>
+        <meta charset="utf-8"/>
+        <meta mane="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" href="normalize.css"/>
+
+        <script src="jquery-3.7.1.min.js"></script>
+        <script src="jquery.flexslider-min.js"></script>
+
+        <Script src="lightbox.min.js"></script>
+        <link rel="stylesheet" href="lightbox.min.css"/>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
+
+        <link rel="stylesheet" href="flexslider.css"/>
+        <link rel="stylesheet" href="hurah.css"/>
+
+        <script>
+            $(document).ready(function(){
+                $('[data-fancybox="gallery"]').fancybox({
+                    transitionEffect: "rotate",
+                    transitionDuration: 1000,
+                });
+
+                $('.flexslider').flexslider({
+                    animation: "slide"
+                }); 
+            });
+        </script>
+
+    </head>
+    <body><a name="top"></a>
+        <div id="header">
+            <div class="flex-container">
+                <div class="hcol1">
+                    <h1><a>RIGHT TO REPAIR</a></h1>
+                </div>
+                <div class="hcol1">
+                    <ul id="nav">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="law.html">Laws</a></li>
+                        <li>
+                            <a href="examples.html" class="current">Examples</a>
+                            <ul>
+                                <li><a href="#good">Good</a></li>
+                                <li><a href="#bad">Bad</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="phone.html">Phone</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="content">
+                <h2><a name="good">The Good Guys</a></h2>
+                <p>
+                    There are a few outstanding examples of companies that have taken inititive to support the Right to Repair movement.
+                    One of the most notable is iFixit, a company that provides repair guides and parts for a wide range of devices.
+                    iFixit has been a strong advocate for the Right to Repair movement, and has worked to raise awareness about the 
+                    importance of repairability in consumer electronics. 
+                </p>
+                <a href="images/IFixit_logo.svg" data-fancybox="gallery" data-caption="IFIXIT"><img src="images/IFixit_logo.svg" class="img_c"/></a>
+                <p>
+                    Another example is Framework, a company that makes modular laptops that can be easity upgraded and repaired. Their approch 
+                    to consumer laptops provideds more power and flexibility to the user more akin to a desktop computer. Their design choices 
+                    are a breadth of fresh air in a world where most laptops are designed to be disposable and unserviceable. This hopefully will 
+                    create a ripple effect in the industry, encouraging other manufacturers to follow suit.
+                </p>
+                <a href="images/Framework_Computer_logo.svg.png" data-fancybox="gallery" data-caption="IFIXIT"><img src="images/Framework_Computer_logo.svg.png" class="img_c"/></a>
+                <h2><a name="bad">The Bad Guys</a></h2>
+                <p>
+                    John Deere is a company that has been criticized for its lack of support for the Right to Repair movement. The company 
+                    has been accused of using software locks and other measures to prevent farmers from repairing their own equipment. 
+                    This has led to a growing backlash against the company, as many farmers feel that they should have the right to repair 
+                    their own equipment without having to rely on expensive dealer services. In fact this year there has been a lawsuit filed 
+                    against John Deere by the Federal Trade Comission, accusin them of creating monopolisitc and anti-competitive repair and dealer
+                    service system that puts farmers and independent repair professionals at an unfair disadvantage.
+                </p>
+                <a href="images/jon.webp" data-fancybox="gallery" data-caption="Repairing the Machine"><img src="images/jon.webp" class="img_c"/></a>
+                <p>
+                    Another example is Apple, a company that has been criticized for its lack of support for the Right to Repair movement. 
+                    Apple has been accused of using proprietary screws and other measures to prevent consumers from repairing their own devices. 
+                    This has led to a growing backlash against the company, as many consumers feel that they should have the right to repair 
+                    their own devices without having to rely on expensive dealer services.
+                </p>
+            </div>
+        </div>
+        </div>
+        <div id="footer">
+            <!-- ooga booga , unga bunga -->
+            <div class="flex-container">
+                <div class="gcol1">
+                    Nav:
+                    <ul id="navf">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="law.html">Laws</a></li>
+                        <li><a href="examples.html">Examples</a></li>
+                        <li><a href="phone.html">Phone</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="gcol2">
+                    Sources:
+                    <ul id="navf">
+                        <li><a href="https://www.ifixit.com/">iFixit</a></li>
+                        <li><a href="https://www.repair.org/">Repair.org</a></li>
+                        <li><a href="https://frame.work/about">Framework</a></li>
+                        <li><a href="https://www.eff.org/">EFF</a></li>
+                        <li><a href="https://www.agweb.com/news/machinery/ftc-vs-john-deere-two-experts-answer-key-questions">John Deere Lawsuit</a></li>
+                    </ul>
+                </div>
+                <div class="gcol3">
+                    Images:
+                    <ul id="navf">
+                        <li><a href="https://www.cultureofrepair.org/advocacy">FIGHT</a></li>
+                        <li><a href="https://www.ifixit.com/News/60846/colorado-fixes-wheelchair-repair-with-new-bill">Wheelchair</a></li>
+                        <li><a href="https://en.m.wikipedia.org/wiki/File:Framework_Computer_logo.svg">Framework Logo</a></li>
+                        <li><a href="https://en.m.wikipedia.org/wiki/File:IFixit_logo.svg">iFixit Logo</a></li>
+                        <li><a href="https://www.vice.com/en/article/john-deere-hit-with-class-action-lawsuit-for-alleged-tractor-repair-monopoly/">Jon</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img id="bongoCat" src="images/bongocat.gif" alt="Bongo Cat">
+        <script src="bongo.js"></script>
+    </body>
+</html>
