@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Northfield Lofts Gallery</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="normalize.css"/>
+        <link rel="stylesheet" href="northLofts.css"/>
+        <script defer src="scroll.js"></script>
+
+
+        <script src="jquery-3.7.1.min.js"></script>
+        <script src="jquery.flexslider-min.js"></script>
+
+        <script src="lightbox.min.js"></script>
+        <link rel="stylesheet" href="lightbox.min.css"/>
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"/> -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
+
+        <!-- <link rel="stylesheet" href="flexslider.css"/> -->
+
+        <script>
+            $(document).ready(function(){
+                $('[data-fancybox]').fancybox({
+                    transitionEffect: "slide",
+                    transitionDuration: 1000,
+                });
+
+                $('.flexslider').flexslider({
+                    animation: "slide"
+                }); 
+            });
+        </script>
+
+        <link rel="stylesheet" href="nanogallery2.css"/>
+        <!-- <link rel="stylesheet" href="nanogallery2.woff.css"/> -->
+        <script src="jquery.nanogallery2.core.js"></script>
+        <script>
+            // Prevent anchor navigation on nanogallery2 thumbnails (Cascading, Moasic, Library)
+            // so clicks open the lightbox instead of following the link
+            $(document).ready(function(){
+                $(document).on('click', '.nanogallery-container a[href], .nGY2 a[href]', function(e){
+                    e.preventDefault();
+                });
+            });
+        </script>
+         <link rel="stylesheet" href="gallery.css"/>
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="header-container">
+                <div class="logo">
+                    <h1>Northfield Lofts</h1>
+                </div>
+                <nav>
+                    <ul id="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html" class="current">Gallery</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="contact.html" class="header-cta">Join Interest List</a>
+                </nav>
+            </div>
+        </div>
+        <main>
+            <div id="wrapper">
+                <h2 class="gallery-title">Cascading</h2>
+                <div id="nanogallery_cascading" class="nanogallery-container" data-nanogallery2 = '{
+                        "thumbnailHeight": "auto",
+                        "thumbnailWidth": 300,
+                        "thumbnailBaseGridHeight": 50,
+                        "thumbnailL1GutterHeight": 10,
+                        "thumbnailL1GutterWidth": 10
+                }'>
+                    <a href="images/renders/render1.png" data-ngthumb="images/renders/render1.png">render1</a>
+                    <a href="images/renders/render2.png" data-ngthumb="images/renders/render2.png">render2</a>
+                    <a href="images/renders/render3.png" data-ngthumb="images/renders/render3.png">render3</a>
+                    <a href="images/renders/render4.png" data-ngthumb="images/renders/render4.png">render4</a>
+                    <a href="images/renders/render5.png" data-ngthumb="images/renders/render5.png">render5</a>
+                    <a href="images/renders/apartment.jpeg" data-ngthumb="images/renders/apartment.jpeg">apartment</a>
+                </div>
+
+                <h2 class="gallery-title">Moasic</h2>
+                <div id="nanogallery_moasic" class="nanogallery-container" data-nanogallery2 = '{
+                    "thumbnailHeight": 200,
+                    "thumbnailWidth": 200,
+                    "galleryMosaic": [
+                        { "c": 1, "r": 1, "w": 2, "h": 1 },
+                        { "c": 3, "r": 1, "w": 1, "h": 1 },
+                        { "c": 4, "r": 1, "w": 2, "h": 1 },
+                        { "c": 6, "r": 1, "w": 1, "h": 2 },
+                        { "c": 1, "r": 2, "w": 2, "h": 2 },
+                        { "c": 3, "r": 2, "w": 1, "h": 1 },
+                        { "c": 4, "r": 2, "w": 1, "h": 2 },
+                        { "c": 3, "r": 3, "w": 1, "h": 1 },
+                        { "c": 5, "r": 2, "w": 1, "h": 2 }
+                    ]
+                }'>
+                    <a href="images/lobby/lobby1.png" data-ngthumb="images/lobby/lobby1.png">lobby1</a>
+                    <a href="images/lobby/lobby2.png" data-ngthumb="images/lobby/lobby2.png">lobby2</a>
+                    <a href="images/lobby/lobby3.png" data-ngthumb="images/lobby/lobby3.png">lobby3</a>
+                    <a href="images/lobby/lobby4.png" data-ngthumb="images/lobby/lobby4.png">lobby4</a>
+                    <a href="images/lobby/lobby6.png" data-ngthumb="images/lobby/lobby6.png">lobby6</a>
+                    <a href="images/lobby/lobby5.png" data-ngthumb="images/lobby/lobby5.png">lobby5</a>
+                    <a href="images/lobby/lobby8.png" data-ngthumb="images/lobby/lobby8.png">lobby8</a>
+                    <a href="images/lobby/lobby7.png" data-ngthumb="images/lobby/lobby7.png">lobby7</a>
+                    <a href="images/lobby/lobby9.png" data-ngthumb="images/lobby/lobby9.png">lobby9</a>
+                </div>
+
+                <h2 class="gallery-title">Library</h2>
+                <div id="nanogallery_library" class="nanogallery-container" data-nanogallery2 = '{
+                    "thumbnailHeight": 300,
+                    "thumbnailWidth": 300,
+                    "galleryMosaic": [
+                        { "c": 1, "r": 1, "w": 2, "h": 2 },
+                        { "c": 3, "r": 1, "w": 1, "h": 1.75 },
+                        { "c": 4, "r": 1, "w": 2, "h": 3 },
+                        { "c": 1, "r": 3, "w": 2, "h": 1 },
+                        { "c": 3, "r": 2.75, "w": 1, "h": 1.25 }
+                    ]
+                }'>
+                    <a href="images/library/lib1.png" data-ngthumb="images/library/lib1.png">lib1</a>
+                    <a href="images/library/lib2.png" data-ngthumb="images/library/lib2.png">lib2</a>
+                    <a href="images/library/lib3.png" data-ngthumb="images/library/lib3.png">lib3</a>
+                    <a href="images/library/lib4.png" data-ngthumb="images/library/lib4.png">lib4</a>
+                    <a href="images/library/lib5.png" data-ngthumb="images/library/lib5.png">lib5</a>
+                </div>
+
+                <h2 class="gallery-title">Kitchenette</h2>
+                <div id="nanogallery_kitchenette" class="nanogallery-container" data-nanogallery2 = '{
+                    "thumbnailHeight": 300,
+                    "thumbnailWidth": 300,
+                    "galleryMosaic": [
+                        { "c": 1, "r": 1, "w": 2, "h": 2 },
+                        { "c": 3, "r": 1, "w": 1, "h": 0.75 },
+                        { "c": 4, "r": 1, "w": 1.5, "h": 1.5 },
+                        { "c": 5.5, "r": 1, "w": 0.75, "h": 1.5 },
+                        { "c": 6.25, "r": 1, "w": 1.25, "h": 1.5 },
+                        { "c": 3, "r": 1.75, "w": 1, "h": 1.25 },
+                        { "c": 1, "r": 3, "w": 1.5, "h": 0.5 },
+                        { "c": 1, "r": 3.5, "w": 1.5, "h": 1.5 },
+                        { "c": 2.5, "r": 3, "w": 1.5, "h": 2 },
+                        { "c": 4, "r": 2.5, "w": 1.5, "h": 2.5 },
+                        { "c": 5.5, "r": 2.5, "w": 2, "h": 2.5 }
+                    ]
+                }'>
+                    <a href="images/kitchenette/kit1.png" data-ngthumb="images/kitchenette/kit1.png">kit1</a>
+                    <a href="images/kitchenette/kit2.png" data-ngthumb="images/kitchenette/kit2.png">kit2</a>
+                    <a href="images/kitchenette/kit3.png" data-ngthumb="images/kitchenette/kit3.png">kit3</a>
+                    <a href="images/kitchenette/kit4.png" data-ngthumb="images/kitchenette/kit4.png">kit4</a>
+                    <a href="images/kitchenette/kit5.png" data-ngthumb="images/kitchenette/kit5.png">kit5</a>
+                    <a href="images/kitchenette/kit6.png" data-ngthumb="images/kitchenette/kit6.png">kit6</a>
+                    <a href="images/kitchenette/kit7.png" data-ngthumb="images/kitchenette/kit7.png">kit7</a>
+                    <a href="images/kitchenette/kit8.png" data-ngthumb="images/kitchenette/kit8.png">kit8</a>
+                    <a href="images/kitchenette/kit9.png" data-ngthumb="images/kitchenette/kit9.png">kit9</a>
+                    <a href="images/kitchenette/kit10.png" data-ngthumb="images/kitchenette/kit10.png">kit10</a>
+                    <a href="images/kitchenette/kit11.png" data-ngthumb="images/kitchenette/kit11.png">kit11</a>
+                </div>
+
+                
+
+            <!-- <section class="gallery-section">
+                <h2 class="gallery-title">Gallery (Layout Options)</h2>
+
+                <div class="gallery-compare">
+                    <section class="gallery-option">
+                        <h3 class="gallery-option-title">Option A — Classic Grid</h3>
+                        <div class="gallery-grid gallery-grid--classic">
+                            <figure class="gallery-item gallery-item--classic">
+                                <a href="images/render1.png" data-fancybox="gallery-classic" data-caption="Render 1">
+                                    <img src="images/render1.png" alt="Northfield Lofts Render 1"/>
+                                </a>
+                                <figcaption>Render 1</figcaption>
+                            </figure>
+                            <figure class="gallery-item gallery-item--classic">
+                                <a href="images/render2.png" data-fancybox="gallery-classic" data-caption="Render 2">
+                                    <img src="images/render2.png" alt="Northfield Lofts Render 2"/>
+                                </a>
+                                <figcaption>Render 2</figcaption>
+                            </figure>
+                            <figure class="gallery-item gallery-item--classic">
+                                <a href="images/render3.png" data-fancybox="gallery-classic" data-caption="Render 3">
+                                    <img src="images/render3.png" alt="Northfield Lofts Render 3"/>
+                                </a>
+                                <figcaption>Render 3</figcaption>
+                            </figure>
+                            <figure class="gallery-item gallery-item--classic">
+                                <a href="images/render4.png" data-fancybox="gallery-classic" data-caption="Render 4">
+                                    <img src="images/render4.png" alt="Northfield Lofts Render 4"/>
+                                </a>
+                                <figcaption>Render 4</figcaption>
+                            </figure>
+                            <figure class="gallery-item gallery-item--classic">
+                                <a href="images/render5.png" data-fancybox="gallery-classic" data-caption="Render 5">
+                                    <img src="images/render5.png" alt="Northfield Lofts Render 5"/>
+                                </a>
+                                <figcaption>Render 5</figcaption>
+                            </figure>
+                            <figure class="gallery-item gallery-item--classic">
+                                <a href="images/apartment.jpeg" data-fancybox="gallery-classic" data-caption="Apartment Interior">
+                                    <img src="images/apartment.jpeg" alt="Northfield Lofts Apartment Interior"/>
+                                </a>
+                                <figcaption>Apartment Interior</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+
+                    <section class="gallery-option">
+                        <h3 class="gallery-option-title">Option B — Moodboard Collage</h3>
+                        <div class="gallery-grid gallery-grid--moodboard">
+                            <figure class="gallery-item gallery-item--moodboard tile-a">
+                                <a href="images/render1.png" data-fancybox="gallery-moodboard" data-caption="Render 1">
+                                    <img src="images/render1.png" alt="Northfield Lofts Render 1"/>
+                                </a>
+                                <figcaption>Render 1</figcaption>
+                            </figure>
+                            <figure class="gallery-item gallery-item--moodboard tile-b">
+                                <a href="images/render2.png" data-fancybox="gallery-moodboard" data-caption="Render 2">
+                                    <img src="images/render2.png" alt="Northfield Lofts Render 2"/>
+                                </a>
+                                <figcaption>Render 2</figcaption>
+                            </figure>
+                            <figure class="gallery-item gallery-item--moodboard tile-c">
+                                <a href="images/render3.png" data-fancybox="gallery-moodboard" data-caption="Render 3">
+                                    <img src="images/render3.png" alt="Northfield Lofts Render 3"/>
+                                </a>
+                                <figcaption>Render 3</figcaption>
+                            </figure>
+                            <figure class="gallery-item gallery-item--moodboard tile-d">
+                                <a href="images/render4.png" data-fancybox="gallery-moodboard" data-caption="Render 4">
+                                    <img src="images/render4.png" alt="Northfield Lofts Render 4"/>
+                                </a>
+                                <figcaption>Render 4</figcaption>
+                            </figure>
+                            <figure class="gallery-item gallery-item--moodboard tile-e">
+                                <a href="images/render5.png" data-fancybox="gallery-moodboard" data-caption="Render 5">
+                                    <img src="images/render5.png" alt="Northfield Lofts Render 5"/>
+                                </a>
+                                <figcaption>Render 5</figcaption>
+                            </figure>
+                            <figure class="gallery-item gallery-item--moodboard tile-f">
+                                <a href="images/apartment.jpeg" data-fancybox="gallery-moodboard" data-caption="Apartment Interior">
+                                    <img src="images/apartment.jpeg" alt="Northfield Lofts Apartment Interior"/>
+                                </a>
+                                <figcaption>Apartment Interior</figcaption>
+                            </figure>
+                        </div>
+                    </section> -->
+                </div>
+            </section>
+        </main>
+
+        
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Northfield Lofts</h3>
+                    <p>138 Luxury Residences<br>Opening 2027</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="timeline.html">Timeline</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Get in Touch</h4>
+                    <p><a href="contact.html">Join Interest List</a></p>
+                    <p>Leasing begins early 2027</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Northfield Lofts by Nexus Outreach. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>
